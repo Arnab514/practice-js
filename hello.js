@@ -43,28 +43,58 @@
 //pollyfils for map function
 // Array.map((element , i , arr) => {}) syntax of map
 
-Array.prototype.myMap = function (cb) {
-    let newArr = []
-    for (let i = 0; i < array.length; i++) {
-        newArr.push (cb(this[i] , i , this))        
-    }
-    return newArr;
+// Array.prototype.myMap = function (cb) {
+//     let newArr = []
+//     for (let i = 0; i < array.length; i++) {
+//         newArr.push (cb(this[i] , i , this))        
+//     }
+//     return newArr;
+// }
+
+// let hi = [1, 1, 1, 1, 1, 1]
+// const hello = hi.map((element) => {
+//     return element*3
+// })
+// console.log (hello)
+
+
+// class login{
+//     constructor(username , email , password){
+//         this.username = username;
+//         this.email = email;
+//         this.password = password;
+//     }
+
+//     encryptPassword( ){
+//         return `${this.password}123`
+//     }
+
+//     usernameTransform(){
+//         return this.username.toUpperCase()
+//     }
+// }
+
+// const user1 = new login( "arnab05" , "arnab@gmail.com" , "ArNaB")
+
+// console.log(user1.encryptPassword())
+// console.log(user1.usernameTransform())
+
+
+// behind the seen of this class constructor
+
+function login (username , email , password){
+    this.username = username
+    this.email = email
+    this.password = password
 }
 
-let hi = [1, 1, 1, 1, 1, 1]
-const hello = hi.map((element) => {
-    return element*3
-})
-console.log (hello)
+login.prototype.encryptPassword = function(){
+    return `${this.password}123`
+}
 
+const user1 = new login( "arnab05" , "arnab@gmail.com" , "ArNaB")
 
-
-
-
-
-
-
-
+console.log(user1.encryptPassword());
 
 
 
