@@ -1,5 +1,5 @@
 // 👉 Problem Set 1: Count duplicate elements in an array
-/*
+
 const fruits = ["orange" , "mango" , "banana" , "banana" , "pineapple" , "mango" , "banana" , "apple" , "mango" , "orange" , "apple" , "apple" , "pineapple", "pineapple", "pineapple", "apple"]
 // Output will be { orange: 2, mango: 3, banana: 3, pineapple: 4, apple: 4 }
 
@@ -13,11 +13,11 @@ function countDuplicate(data){
 }
 
 console.log(countDuplicate(fruits))
-*/
+
 
 
 // 👉 Problem Set 2: Reverse words in a string
-/*
+
 const str = "Hi my name is Arnab"
 // Output will be "iH ym eman si banrA"
 
@@ -32,12 +32,14 @@ function reverseWordsinString(data){
 }
 
 console.log(reverseWordsinString(str))
-*/
+
+
 
 // 👉 Problem Set 3: Sorting words by length in a sentence
+
+const str1 = "You ar a goooooood girl"
 // Output will be "a ar You girl goooooood"
 
-const str = "You ar a goooooood girl"
 function sortingByWords(data){
 
     const newData = data.split(" ")
@@ -47,4 +49,4 @@ function sortingByWords(data){
     return final
 }
 
-console.log(sortingByWords(str))
+console.log(sortingByWords(str1))
