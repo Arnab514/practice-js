@@ -82,19 +82,19 @@
 
 // behind the seen of this class constructor
 
-function login (username , email , password){
-    this.username = username
-    this.email = email
-    this.password = password
-}
+// function login (username , email , password){
+//     this.username = username
+//     this.email = email
+//     this.password = password
+// }
 
-login.prototype.encryptPassword = function(){
-    return `${this.password}123`
-}
+// login.prototype.encryptPassword = function(){
+//     return `${this.password}123`
+// }
 
-const user1 = new login( "arnab05" , "arnab@gmail.com" , "ArNaB")
+// const user1 = new login( "arnab05" , "arnab@gmail.com" , "ArNaB")
 
-console.log(user1.encryptPassword());
+// console.log(user1.encryptPassword());
 
 
 
